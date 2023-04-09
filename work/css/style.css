@@ -1,0 +1,273 @@
+/* Start Variable */
+:root{
+    --main-gradiant:linear-gradient(270.16deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+}
+/* End Variable */
+/* Start Global Rule */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+body{
+font-family: 'IBM Plex Sans', sans-serif;
+
+}
+.container{
+padding: 56px 48px;
+margin-left: auto;
+margin-right: auto;
+
+
+
+}
+@media (min-width: 992px) {
+.container {
+  width: 970px;
+}
+}
+/* Large */
+@media (min-width: 1200px) {
+.container {
+  width: 1170px;
+}
+}
+/* End Global Rule */
+/* Start Toogle-Bar */
+.home-page{
+display: flex;
+justify-content: space-between;
+list-style-type: none; 
+
+flex-wrap: wrap;
+
+}
+.toogle-bar{
+width: 15%;
+height: 1950px;
+background-color: #141313;
+}
+.toogle-bar .container{
+width: 255px;
+height: 1500px;
+padding: 56px 48px;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.toogle-bar h1{
+font-size: 30px;
+line-height: 39px;
+font-weight: 700;
+margin-bottom:105px; 
+color: #ffffff;
+
+
+}
+.toogle-bar ul{
+list-style: none;
+}
+.toogle-bar ul li{
+font-size: 20px;
+line-height: 30px;
+font-weight: 400;
+margin-bottom: 20px;
+
+}
+.toogle-bar ul li a{
+text-decoration: none;
+color: #fff;
+position: relative;
+
+}
+.toogle-bar .nav-bar a:hover::before {
+content: '';
+position: absolute;
+width: 65px;
+height: 2px;
+top: 15px;
+z-index: 1;
+background: var(--main-gradiant,#FF6C63);
+}
+
+.toogle-bar .social-media {
+display: flex;
+flex-direction: column;
+margin-top: 55px;
+
+}
+.toogle-bar .social-media  li {
+margin-top: 15px;
+
+}
+.toogle-bar .social-media  li i {
+font-size: 35px;
+color:#ffffff;
+
+}
+.toogle-bar p {
+margin-top: 35px;
+color: #ffffff;
+
+}
+
+
+
+
+/* End Toogle-Bar */
+/* Start Section */
+section .container {
+  margin: 0 115px;
+}
+.row-one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.row-two {
+  display: flex;
+  margin-bottom: 35px;
+}
+.block-one {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+
+}
+.block-two {
+  display: flex;
+  margin-left: 45px;
+  align-items: center;
+}
+.section-title h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #141313;
+}
+.section p {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #141313;
+}
+section button {
+  margin: 50px 400px;
+  width: 25%;
+  padding: 15px;
+  border: solid 1px transparent;
+  border-radius: 30px;
+  font-size: 19px;
+  font-weight: 800;
+  color: #fff;
+  background-color: #141313;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section button:hover{
+  background: linear-gradient(270.16deg, #FFB147 5.74%, #FF6C63 50.64%, #B86ADF 92.05%);
+  transform: translateX(55px);
+}
+
+
+/* End Section */
+/* Start Artical */
+.artical{
+  background: var(--main-gradiant,blue);
+  color:#ffffff;
+  width: 1235px;
+  height: 905px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-38%,53%);
+}
+/* .artical .container{} */
+.artical-title p {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  
+  text-align: center;
+}
+.artical-title h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  /* identical to box height, or 117% */
+  
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+.artical .block{
+  display: flex;
+  margin-top: 106px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.artical .text {
+  width: 52%;
+}
+.block .text p:first-child{
+  font-style: italic;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 65px;
+}
+.block .text p:nth-child(2){
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px
+}
+.block .text p:last-child{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  
+  letter-spacing: -0.01em;
+}
+.text ul {
+  display: flex;
+  margin: 47px;
+}
+.text li {
+  list-style-type: none;
+  margin: 0px 15px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #ffff;
+  color: black;
+  height: 60px;
+  width: 60px;
+  font-size: 30px;
+  text-align: center;
+  padding: 13px 0;
+}
+.brend-list ul {
+  display: flex;
+}
+.brend-list ul li {
+  margin: 20px 67px;
+  list-style-type: none;
+}
+i{
+  cursor: pointer;
+}
+/* End Artical */
